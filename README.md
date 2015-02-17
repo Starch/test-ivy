@@ -1,4 +1,4 @@
-Reproduces a problem with gradle 2.3 and some ivy dependencies.
+Reproduces a problem with gradle 2.3 and some ivy dependencies. See question on gradle forums here http://forums.gradle.org/gradle/topics/gradle-2-3-ivy-configuration-mapping-makes-dependencies-resolution-to-fail-test
 
 The problem seems to come from the particular confmapping defined in dependency ivy.xml.
 
