@@ -1,0 +1,21 @@
+apply plugin: "java"
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+repositories {
+    ivy {
+        url 'https://github.com/Starch/test-ivy/raw/master/ivyrepo'
+        layout "pattern", {
+            artifact "[organisation]/[module]/[revision]/[type]s/[artifact]-[revision].[ext]"
+            ivy "[organisation]/[module]/[revision]/ivys/ivy-[revision].xml"
+        }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    //compile 'xxx:yyy:5.63.0'
+    testCompile 'junit:junit:+'
+}
