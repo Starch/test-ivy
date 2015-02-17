@@ -16,6 +16,6 @@ repositories {
 }
 
 dependencies {
-    //compile 'xxx:yyy:5.63.0'
+    compile 'xxx:yyy:5.63.0'
     testCompile 'junit:junit:+'
 }
