@@ -11,5 +11,7 @@
   <dependencies>
     <dependency org="net.sourceforge.cobertura" name="cobertura" rev="1.9"/>
     <dependency org="log4j" name="log4j" rev="1.2.14"/>
+    <exclude type="source*" matcher="glob" ext="jar"/>
+    <exclude type="javadoc" ext="jar"/>
   </dependencies>
 </ivy-module>
